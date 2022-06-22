@@ -43,19 +43,17 @@ body {
 
 .item-header {
   border-bottom: 1px solid var(--border-color);
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .container {
-  min-width: 1170px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper {
@@ -69,8 +67,8 @@ body {
   align-self: center;
 }
 
-.wrapper-nav li + li {
-  margin-left: 50px;
+.wrapper-nav li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .wrapper-contacts {
@@ -79,8 +77,8 @@ body {
   margin-left: auto;
 }
 
-.wrapper-contacts li + li {
-  margin-left: 50px;
+.wrapper-contacts li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo-header {
@@ -331,8 +329,6 @@ body {
   background-color: var(--footer-bg-color);
   padding-bottom: 60px;
   padding-top: 60px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .logo-footer {
@@ -346,10 +342,10 @@ body {
   margin-right: 93px;
 }
 
-.footer-contacts .reference {
-  margin-top: 9px;
+.footer-contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .address,
 .mail,
 .phone {
